@@ -1,0 +1,9 @@
+.carousel-indicators [data-bs-target] {
+  border: none;
+  color: grey;
+  width: 25px;
+  height: 3px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 10px;
+}
