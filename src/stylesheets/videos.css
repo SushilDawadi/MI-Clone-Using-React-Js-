@@ -1,0 +1,6 @@
+.videos {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin: auto;
+}
