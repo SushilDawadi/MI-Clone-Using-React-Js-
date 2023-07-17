@@ -1,4 +1,5 @@
 import React from "react";
+import "../stylesheets/footer.css";
 const youtubeIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -115,9 +116,156 @@ const instagramIcon = (
     />
   </svg>
 );
+const repeatIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="55"
+    viewBox="0 -960 960 960"
+    width="55"
+  >
+    <path d="M480-80q-75 0-140.5-28T225-185q-49-49-77-114.5T120-440h60q0 125 87.5 212.5T480-140q125 0 212.5-87.5T780-440q0-125-85-212.5T485-740h-23l73 73-41 42-147-147 147-147 41 41-78 78h23q75 0 140.5 28T735-695q49 49 77 114.5T840-440q0 75-28 140.5T735-185q-49 49-114.5 77T480-80Z" />
+  </svg>
+);
+const secureIcon = (
+  <svg
+    width="55px"
+    height="55px"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M12.4472 1.10557C12.1657 0.964809 11.8343 0.964809 11.5528 1.10557L3.55279 5.10557C3.214 5.27496 3 5.62123 3 6V12C3 14.6622 3.86054 16.8913 5.40294 18.7161C6.92926 20.5218 9.08471 21.8878 11.6214 22.9255C11.864 23.0248 12.136 23.0248 12.3786 22.9255C14.9153 21.8878 17.0707 20.5218 18.5971 18.7161C20.1395 16.8913 21 14.6622 21 12V6C21 5.62123 20.786 5.27496 20.4472 5.10557L12.4472 1.10557ZM5 12V6.61803L12 3.11803L19 6.61803V12C19 14.1925 18.305 15.9635 17.0696 17.425C15.8861 18.8252 14.1721 19.9803 12 20.9156C9.82786 19.9803 8.11391 18.8252 6.93039 17.425C5.69502 15.9635 5 14.1925 5 12ZM16.7572 9.65323C17.1179 9.23507 17.0714 8.60361 16.6532 8.24284C16.2351 7.88207 15.6036 7.9286 15.2428 8.34677L10.7627 13.5396L8.70022 11.5168C8.30592 11.1301 7.67279 11.1362 7.28607 11.5305C6.89935 11.9248 6.90549 12.5579 7.29978 12.9446L10.1233 15.7139C10.3206 15.9074 10.5891 16.0106 10.8651 15.9991C11.1412 15.9876 11.4002 15.8624 11.5807 15.6532L16.7572 9.65323Z"
+    />
+  </svg>
+);
+const networkIcon = (
+  <svg
+    fill=""
+    width="55px"
+    height="55px"
+    viewBox="0 0 32 32"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>network</title>
+    <path d="M27 21.75c-0.795 0.004-1.538 0.229-2.169 0.616l0.018-0.010-2.694-2.449c0.724-1.105 1.154-2.459 1.154-3.913 0-1.572-0.503-3.027-1.358-4.212l0.015 0.021 3.062-3.062c0.57 0.316 1.249 0.503 1.971 0.508h0.002c2.347 0 4.25-1.903 4.25-4.25s-1.903-4.25-4.25-4.25c-2.347 0-4.25 1.903-4.25 4.25v0c0.005 0.724 0.193 1.403 0.519 1.995l-0.011-0.022-3.062 3.062c-1.147-0.84-2.587-1.344-4.144-1.344-0.868 0-1.699 0.157-2.467 0.443l0.049-0.016-0.644-1.17c0.726-0.757 1.173-1.787 1.173-2.921 0-2.332-1.891-4.223-4.223-4.223s-4.223 1.891-4.223 4.223c0 2.332 1.891 4.223 4.223 4.223 0.306 0 0.605-0.033 0.893-0.095l-0.028 0.005 0.642 1.166c-1.685 1.315-2.758 3.345-2.758 5.627 0 0.605 0.076 1.193 0.218 1.754l-0.011-0.049-0.667 0.283c-0.78-0.904-1.927-1.474-3.207-1.474-2.334 0-4.226 1.892-4.226 4.226s1.892 4.226 4.226 4.226c2.334 0 4.226-1.892 4.226-4.226 0-0.008-0-0.017-0-0.025v0.001c-0.008-0.159-0.023-0.307-0.046-0.451l0.003 0.024 0.667-0.283c1.303 2.026 3.547 3.349 6.1 3.349 1.703 0 3.268-0.589 4.503-1.574l-0.015 0.011 2.702 2.455c-0.258 0.526-0.41 1.144-0.414 1.797v0.001c0 2.347 1.903 4.25 4.25 4.25s4.25-1.903 4.25-4.25c0-2.347-1.903-4.25-4.25-4.25v0zM8.19 5c0-0.966 0.784-1.75 1.75-1.75s1.75 0.784 1.75 1.75c0 0.966-0.784 1.75-1.75 1.75v0c-0.966-0.001-1.749-0.784-1.75-1.75v-0zM5 22.42c-0.966-0.001-1.748-0.783-1.748-1.749s0.783-1.749 1.749-1.749c0.966 0 1.748 0.782 1.749 1.748v0c-0.001 0.966-0.784 1.749-1.75 1.75h-0zM27 3.25c0.966 0 1.75 0.784 1.75 1.75s-0.784 1.75-1.75 1.75c-0.966 0-1.75-0.784-1.75-1.75v0c0.001-0.966 0.784-1.749 1.75-1.75h0zM11.19 16c0-0.001 0-0.002 0-0.003 0-2.655 2.152-4.807 4.807-4.807 1.328 0 2.53 0.539 3.4 1.409l0.001 0.001 0.001 0.001c0.87 0.87 1.407 2.072 1.407 3.399 0 2.656-2.153 4.808-4.808 4.808s-4.808-2.153-4.808-4.808c0-0 0-0 0-0v0zM27 27.75c-0.966 0-1.75-0.784-1.75-1.75s0.784-1.75 1.75-1.75c0.966 0 1.75 0.784 1.75 1.75v0c-0.001 0.966-0.784 1.749-1.75 1.75h-0z"></path>
+  </svg>
+);
+const Footer = ({ footer }) => {
+  return (
+    <>
+      <div className="preFooter">
+        <div>
+          {repeatIcon}
+          <p>
+            {" "}
+            <b>Hassle-free replacement</b>
+            <br />
+            10-day easy replacement policy on mi.com
+          </p>
+        </div>
+        <div>
+          {secureIcon}
 
-const Footer = () => {
-  return <div className="PreFooter">Footer</div>;
+          <p>
+            <b>100% secure payments</b> <br />
+            We support Cards,Wallets,EMI and COD
+          </p>
+        </div>
+        <div>
+          {networkIcon}
+
+          <p>
+            {" "}
+            <b>Vast service network</b>
+            <br />
+            1000 Mi service-centers across 600 cities
+          </p>
+        </div>
+      </div>
+      <div className="pre-footer2">
+        <div>
+          <p>
+            LET'S STAY IN TOUCH <br />
+            <span>Get updates on sales specials and more</span>
+          </p>
+        </div>
+        <div>
+          <div>
+            <input type="email" placeholder="Enter Email Address" />
+            <button> {">"} </button>
+          </div>
+          <span>Thanks.You're on our email list for special offers.</span>
+        </div>
+        <div>
+          <p>
+            FOLLOW MI <br /> <span>We want to hear from you!</span>{" "}
+          </p>
+        </div>
+        <div>
+          {facebookIcon}
+          {youtubeIcon}
+          {instagramIcon}
+          {twitterIcon}
+        </div>
+      </div>
+      <div className="footer">
+        <div>
+          <p>SUPPORT</p>
+          {footer.support.map((item, index) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p>SHOP AND LEARN</p>
+          {footer.shopAndLearn.map((item, index) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p>RETAIL STORE</p>
+          {footer.retailStore.map((item, index) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p>ABOUT</p>
+          {footer.aboutUS.map((item) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p>CONTACT US</p>
+          {footer.contactUs.map((item) => (
+            <a key={item.url} href={item.url}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div>
+          <p>
+            Chat with our virtual AI Bot
+            <br />
+            (24/7 Live Agent Support)
+          </p>
+          <button>CHAT NOW</button>
+        </div>
+      </div>
+      <div className="footerBorder">
+        <div> Copyright © 2010 - 2023 Xiaomi. All Rights Reserved </div>
+      </div>
+    </>
+  );
 };
 
 export default Footer;

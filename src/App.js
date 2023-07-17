@@ -14,6 +14,7 @@ import ProductReviews from "./components/ProductReviews.jsx";
 import Videos from "./components/Videos.jsx";
 import Banner from "./components/Banner.jsx";
 import Footer from "./components/Footer.jsx";
+import NavOption from "./components/NavOption";
 
 const App = () => {
   return (
@@ -21,6 +22,16 @@ const App = () => {
       <Fragment>
         <PreNavbar />
         <Navbar />
+        <NavOption
+          miPhones={data.miPhones}
+          redmiPhones={data.redmiPhones}
+          tv={data.tv}
+          laptop={data.laptop}
+          fitnessAndLifeStyle={data.fitnessAndLifeStyle}
+          home={data.home}
+          audio={data.audio}
+          accessories={data.accessories}
+        />
         <Slider start={data.banner.start} />
         <Offers offer={data.offer} />
         <Heading text="STAR PRODUCTS" />
@@ -89,7 +100,7 @@ const App = () => {
       <Videos videos={data.videos} />
       <Heading text="IN THE PRESS" />
       <Banner banner={data.banner} />
-      <Footer />
+      <Footer footer={data.footer} />
     </Router>
   );
 };
